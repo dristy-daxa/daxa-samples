@@ -9,7 +9,7 @@ import time
 
 # Page configuration
 st.set_page_config(
-    page_title="SafeInfer LLM Chatbot",
+    page_title="Finance Ops Chatbot",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -182,8 +182,8 @@ def display_chat_message(role: str, content: str, model: str = "", timestamp: st
 # Main header
 st.markdown("""
 <div class="main-header">
-    <h1>🛡️ SafeInfer LLM Chatbot</h1>
-    <p>Secure and intelligent conversations powered by SafeInfer API</p>
+    <h1>🛡️ Finance Ops Chatbot</h1>
+    <p>Helpful assistant for Finance Ops team</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -253,7 +253,7 @@ for message in st.session_state.chat_history:
 user_input = st.text_area(
     "Type your message here:",
     height=100,
-    placeholder="Ask me anything! I'm powered by SafeInfer LLM API.",
+    placeholder="Ask me anything! I'm powered by Pebblo SafeInfer LLM API.",
     key="user_input"
 )
 
@@ -393,6 +393,6 @@ if send_button and user_input.strip():
 st.markdown("---")
 st.markdown("""
 <div style="text-align: center; color: #666; font-size: 0.8rem;">
-    <p>🛡️ Powered by SafeInfer LLM API | Secure • Intelligent • Reliable</p>
+    <p>🛡️ Powered by Pebblo SafeInfer LLM API | Secure • Intelligent • Reliable</p>
 </div>
 """, unsafe_allow_html=True)
