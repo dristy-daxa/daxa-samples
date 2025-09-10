@@ -94,9 +94,9 @@ def run_async_query(user_input: str):
 # User input section
 st.subheader("Enter your query")
 user_query = st.text_area(
-    "Ask about Jira, Confluence, and other Atlassian resources:",
+    "Ask about HubSport Deals, Companies, Contacts",
     height=100,
-    placeholder="e.g., What is the status of JIRA ticket ABC-9?"
+    placeholder="e.g., List all companies and contacts in your HubSpot account"
 )
 
 # Submit button
@@ -118,6 +118,7 @@ with st.sidebar:
     This app uses LangGraph to process queries about JIRA tickets, Confluence pages, and other Atlassian resources through the MCP (Model Context Protocol) server.
     
     **Features:**
+    - Query HubSport Deals, Companies, Contacts
     - Query JIRA, Confluence, and other Atlassian resources
     - Clean, parsed answers
     """)
