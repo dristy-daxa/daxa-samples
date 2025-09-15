@@ -237,6 +237,14 @@ with st.sidebar:
     st.metric("Messages", len(st.session_state.chat_history))
     st.metric("Current Model", st.session_state.selected_model)
 
+# Welcome message
+st.markdown("""
+<div class="chat-message bot-message">
+    <strong>🤖 AI Assistant:</strong><br>
+    Welcome, sharmith-mrkt@daxa.ai Marketing team!
+</div>
+""", unsafe_allow_html=True)
+
 # Main chat interface
 st.subheader("💬 Chat Interface")
 
